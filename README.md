@@ -9,7 +9,7 @@ Este projeto implementa um aplicativo web simples e intuitivo para organizar seu
 
 Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicativo, você pode gerenciar seu Amigo Secreto de forma rápida e fácil. Adicione os participantes, realize o sorteio e veja quem você tirou de forma individual e discreta.
 
-![Tela principal do aplicativo](https://github.com/user-attachments/assets/c470a572-8731-4a81-bce5-9d7732819c37)
+[![Tela principal do aplicativo](https://github.com/user-attachments/assets/c470a572-8731-4a81-bce5-9d7732819c37)](https://henriquestoni.github.io/02_challenge-amigo-secreto/)
 
 ## Funcionalidades Principais ✅
 
@@ -84,6 +84,12 @@ Sinta-se à vontade para contribuir com o projeto! Você pode:
 *   Reportar bugs e problemas encontrados.
 *   Sugerir novas funcionalidades e melhorias.
 *   Criar pull requests com correções e implementações.
+
+## Deploy 🚀
+
+**Acesse o aplicativo agora mesmo!** ✨
+
+[Clique aqui para experimentar o Amigo Secreto Web App!](https://henriquestoni.github.io/02_challenge-amigo-secreto/)
 
 ## Autor ✒️
 
