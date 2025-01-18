@@ -9,7 +9,9 @@ Este projeto implementa um aplicativo web simples e intuitivo para organizar seu
 
 Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicativo, você pode gerenciar seu Amigo Secreto de forma rápida e fácil. Adicione os participantes, realize o sorteio e veja quem você tirou de forma individual e discreta.
 
-## Funcionalidades Principais
+![Tela principal do aplicativo](https://github.com/user-attachments/assets/c470a572-8731-4a81-bce5-9d7732819c37)
+
+## Funcionalidades Principais ✅
 
 1.  **Adição de Amigos:**
     *   Um campo de entrada de texto coleta o nome do amigo.
@@ -18,6 +20,7 @@ Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicati
     *   A função valida o nome inserido (não pode ser vazio) e o adiciona a um array chamado `arrayAmigos`.
     *   Em caso de nome repetido é exibida uma mensagem ao usuário, prosseguindo com a inclusão apenas quando confirmado.
     *   A lista de amigos é exibida dinamicamente na página.
+
 2.  **Sorteio do Amigo Secreto:**
     *   Um botão "Sortear Amigo" aciona a função `sortearAmigo`.
     *   A função verifica se há amigos na lista antes de prosseguir.
@@ -25,6 +28,7 @@ Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicati
     *   A função `gerarIdAleatorio()` garante que cada amigo seja sorteado e que não haja repetições em caso de múltiplos sorteios.
     *   O nome sorteado é exibido na página.
     *   Como não há identificação dos usuários, é possível que uma pessoa sorteie a si mesma.
+
 3.  **Tratamento de Sorteio Finalizado:**
     *   Se um sorteio já foi finalizado, dependendo de qual botão for clicado, o sistema pergunta ao usuário se ele deseja:
         *   **Caso preencha um novo nome e clique no botão "Adicionar" (ou pressione "Enter")**:
@@ -34,20 +38,23 @@ Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicati
             *   Criar uma lista com múltiplos sorteados.
             *   Descartar o nome sorteado anteriormente e sortear um Amigo Secreto diferente.
             *   O sistema comunica ao usuário caso não restem nomes disponíveis para sortear.
+
 4.  **Validações:**
     *   O sistema valida se o nome do amigo está em branco.
     *   O sistema verifica se o nome do amigo já está incluído na listagem existente.
     *   Alertas e mensagens de confirmação são exibidos para orientar o usuário.
 
-## Estrutura do Código
+## Estrutura do Código 💻
 
-*   `adicionarAmigo()`: Gerencia a adição de amigos à lista, incluindo validações e tratamento de nomes repetidos.
-*   `listarAmigos()`: Exibe a lista de amigos na página.
-*   `gerarIdAleatorio()`: Gera IDs aleatórios para o sorteio, garantindo que não haja repetições.
-*   `listarSorteados()`: Exibe o nome do amigo sorteado na página.
-*   `sortearAmigo()`: Gerencia o processo de sorteio, incluindo a lógica para múltiplos sorteios e tratamento de sorteios finalizados.
+| Função            | Descrição                                                                                                                                                                         |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `adicionarAmigo()` | Gerencia a adição de amigos à lista, incluindo validações e tratamento de nomes repetidos.                                                                                       |
+| `listarAmigos()`   | Exibe a lista de amigos na página.                                                                                                                                                 |
+| `gerarIdAleatorio()` | Gera IDs aleatórios para o sorteio, garantindo que não haja repetições.                                                                                                            |
+| `listarSorteados()` | Exibe o nome do amigo sorteado na página.                                                                                                                                          |
+| `sortearAmigo()`   | Gerencia o processo de sorteio, incluindo a lógica para múltiplos sorteios e tratamento de sorteios finalizados.                                                                  |
 
-## Interface do Usuário
+## Interface do Usuário 👀
 
 *   O sistema possui um campo de entrada para adicionar nomes.
 *   Uma lista dinâmica exibe os nomes dos amigos adicionados.
@@ -55,7 +62,7 @@ Cansado de papelzinhos, dificuldades para organizar o sorteio? Com este aplicati
 *   Um botão "Sortear Amigo" inicia o sorteio.
 *   Os resultados do sorteio são exibidos dinamicamente na página.
 
-## Fluxo do Sistema
+## Fluxo do Sistema ➡️
 
 1.  O usuário insere os nomes dos amigos.
 2.  O sistema adiciona os amigos à lista.
