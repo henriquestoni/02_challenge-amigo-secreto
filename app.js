@@ -6,8 +6,8 @@ let btnAdd = document.querySelector('#btnAdd');
 let listaAmigos = document.querySelector('#listaAmigos');
 let resultado = document.querySelector('#resultado');
 
-listaAmigos.innerHTML = '';
-resultado.innerHTML = '';
+listaAmigos.innerHTML = ''; //comando desnecessário, adicionado por prudência para cumprir as instruções do desafio.
+resultado.innerHTML = ''; //comando desnecessário, adicionado por prudência para cumprir as instruções do desafio.
 
 document.addEventListener('keypress', function(event){
     if(event.key === 'Enter'){
@@ -20,12 +20,12 @@ function listarAmigos(arrAmigos){
     for(let x = 0; x < arrAmigos.length; x++){
         listagem += `<li>${arrAmigos[x]}</li>`;
     }
-    listaAmigos.innerHTML = '';
+    listaAmigos.innerHTML = ''; //comando desnecessário, adicionado apenas para cumprir as instruções do desafio.
     listaAmigos.innerHTML = listagem;
 }
 
 function adicionarAmigo(){
-    let inputAmigo = nomeAmigo.value;
+    let inputAmigo = nomeAmigo.value.trim();
 
     if(resultado.classList.contains('final') == true){
         let finalizado = confirm(`Você clicou em "Adicionar Amigo", porém o sorteio do Amigo Secreto já está finalizado.\n\nCaso a sua intenção seja descartar o sorteio anterior e adicionar novos nomes à listagem existente para, posteriormente, realizar um novo sorteio, clique em "OK".\n\nPorém, caso você deseje apenas criar uma nova listagem para o Amigo Secreto, exluindo os ${arrayAmigos.length} nomes cadastrados, cliquem em "CANCELAR".`);
